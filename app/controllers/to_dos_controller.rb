@@ -1,6 +1,6 @@
 class ToDosController < ApplicationController
   before_action :set_to_do, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:new, :create]
   # GET /to_dos
   # GET /to_dos.json
   def index

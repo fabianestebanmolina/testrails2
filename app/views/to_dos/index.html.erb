@@ -18,6 +18,7 @@
         <td><%= to_do.Titulo %></td>
         <td><%= to_do.Comentarios %></td>
         <td><%= to_do.Nota %></td>
+        <td><%= to_do.user.try(:Nombre) %></td>
         <td><%= link_to 'Show', to_do %></td>
         <td><%= link_to 'Edit', edit_to_do_path(to_do) %></td>
         <td><%= link_to 'Destroy', to_do, method: :delete, data: { confirm: 'Are you sure?' } %></td>

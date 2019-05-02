@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_01_082530) do
+ActiveRecord::Schema.define(version: 2019_05_02_031536) do
 
   create_table "to_dos", force: :cascade do |t|
     t.text "Titulo"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2019_05_01_082530) do
     t.float "Nota"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
