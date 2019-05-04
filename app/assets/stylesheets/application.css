@@ -15,5 +15,44 @@
  */
 
  nav.navbar {
-    background-color: black;
+    background-color: #001433;
+}
+
+body{
+  background-color:  #001f4d;
+}
+.title{
+  color: lightgrey;
+}
+
+.table{
+  background-color:black;
+}
+
+.table1{
+  background-color: black;
+  color: #5d5d3c;
+}
+
+.table2{
+  background-color: black;
+  color: #5d5d3c;
+}
+
+.log_in{
+  background-color:  #001f4d;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  margin-left: 40%;
+
+}
+
+.btn{
+  border-radius: 70px;
+  border-style: solid;
+}
+
+.newtodo{
+
 }

@@ -1,32 +1,39 @@
 <p id="notice"><%= notice %></p>
 
-<h1>To Dos</h1>
+<div class="title">
+  <h1>To Dos</h1>
+</div>
+<div class="table">
 
 <table>
-  <thead>
-    <tr>
-      <th>Titulo</th>
-      <th>Comentarios</th>
-      <th>Nota</th>
-      <th colspan="3"></th>
-    </tr>
+  <thead class="table1">
+        <tr>
+        <th>Titulo</th>
+        <th>Comentarios</th>
+        <th>Nota</th>
+        <th colspan="3"></th>
+        </tr>
   </thead>
 
   <tbody>
     <% @to_dos.each do |to_do| %>
-      <tr>
+      <tr class="table2">
         <td><%= to_do.Titulo %></td>
         <td><%= to_do.Comentarios %></td>
         <td><%= to_do.Nota %></td>
         <td><%= to_do.user.try(:Nombre) %></td>
-        <td><%= link_to 'Show', to_do %></td>
-        <td><%= link_to 'Edit', edit_to_do_path(to_do) %></td>
-        <td><%= link_to 'Destroy', to_do, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', to_do, class: 'btn btn-success btn-xs'%></td>
+        <td><%= link_to 'Edit', edit_to_do_path(to_do), class: 'btn btn-warning  btn-xs' %></td>
+        <td><%= link_to 'Destroy', to_do, method: :delete, class: 'btn btn-danger  btn-xs', data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
+
+
 </table>
+</div>
 
 <br>
-
-<%= link_to 'New To Do', new_to_do_path %>
+<div class="newtodo">
+<%= link_to 'New To Do', new_to_do_path, class: 'btn btn-primary' %>
+</div>
