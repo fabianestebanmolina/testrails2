@@ -25,7 +25,7 @@ class ToDosController < ApplicationController
   # POST /to_dos.json
   def create
     @to_do = ToDo.new(to_do_params)
-    @to_do.user = current_user
+    #@to_do.user = current_user
 
     respond_to do |format|
       if @to_do.save
